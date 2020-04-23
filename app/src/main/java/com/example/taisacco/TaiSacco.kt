@@ -35,6 +35,9 @@ class TaiSacco : Fragment() {
             container,
             false
         )
+
+//        THIS SECTION OF THE CODE IS USED TO HANDLE THE CLICK FUNCTIONALITY OF THE CARDS.
+
         return binding.root
     }
 
@@ -47,8 +50,8 @@ class TaiSacco : Fragment() {
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = when(position) {
                 0 -> "Enquiry"
-                1->"Transactions"
-                3-> "Loans"
+                1->  "Transactions"
+                2-> "Loans"
                 else-> "About"
             }
         }.attach()
@@ -70,7 +73,7 @@ class DemoCollectionAdapter(fragment: Fragment) : FragmentStateAdapter(fragment)
             1 -> {
                 Transactions()
             }
-            3-> {
+            2-> {
                 Loans()
             }
             else -> {

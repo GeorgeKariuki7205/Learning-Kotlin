@@ -15,9 +15,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:titleTextColor="@android:color/white"
-                android:background="?attr/colorPrimary"
-        >
+                android:background="?attr/colorPrimary">
         </androidx.appcompat.widget.Toolbar>
+
         <fragment android:id="@+id/myNavHostFragment" android:name="androidx.navigation.fragment.NavHostFragment"
                   android:layout_width="match_parent" android:layout_height="match_parent"
                   app:navGraph="@navigation/navigation" app:defaultNavHost="true"

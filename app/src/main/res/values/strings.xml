@@ -6,4 +6,9 @@
     <string name="hello_blank_fragment2">Hello blank fragment</string>
     <string name="create_new">create New</string>
     <string name="open">open</string>
+    <string name="content_description_media">Image Description</string>
+    <string name="title">Title</string>
+    <string name="secondary_text">Secondary Text</string>
+    <string name="supporting_text">Supporting Text</string>
+    <string name="action_1">Action</string>
 </resources>
