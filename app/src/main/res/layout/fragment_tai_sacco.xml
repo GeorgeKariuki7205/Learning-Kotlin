@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             tools:context=".TaiSacco">
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".TaiSacco">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="hello_blank_fragment Landing Page"/>
+            android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabRippleColor="@color/colorAccent"
+                android:background="?attr/colorPrimary"
+                app:tabSelectedTextColor="@color/design_default_color_background"
+                app:tabTextColor="#FFFFFF"
+        />
+        <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+    </LinearLayout>
 
 </layout>
