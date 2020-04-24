@@ -36,6 +36,10 @@ class TaiSacco : Fragment() {
             false
         )
 
+//        CHANGING TOOLBAR NAME.
+
+        (activity as MainActivity).supportActionBar?.title = "TAI SACCO"
+
 //        THIS SECTION OF THE CODE IS USED TO HANDLE THE CLICK FUNCTIONALITY OF THE CARDS.
 
         return binding.root
@@ -55,6 +59,7 @@ class TaiSacco : Fragment() {
                 else-> "About"
             }
         }.attach()
+
         tabLayout.getTabAt(0)?.setIcon(R.drawable.grow_portfolio256)
         tabLayout.getTabAt(1)?.setIcon(R.drawable.money_bag)
         tabLayout.getTabAt(2)?.setIcon(R.drawable.data_analysis_brain_arrow_graph_think256)

@@ -13,12 +13,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:tabMode="fixed"
-                app:tabIndicatorColor="@color/colorAccent"
-                app:tabRippleColor="@color/colorAccent"
-                android:background="?attr/colorPrimary"
-                app:tabSelectedTextColor="@color/design_default_color_background"
-                app:tabTextColor="#FFFFFF"
-                app:tabIconTint="#FFFFFF" android:isScrollContainer="true"/>
+                app:tabIndicatorColor="@color/white"
+                app:tabRippleColor="@color/black"
+                app:tabBackground="@drawable/backgroud"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/tabnotselectedcolor"
+                app:tabIconTint="@drawable/iconcolor"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                android:isScrollContainer="true"/>
         <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"

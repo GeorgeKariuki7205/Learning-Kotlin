@@ -42,7 +42,7 @@
                         <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="140dp"
-                                app:srcCompat="@drawable/icons8atm96"
+                                app:srcCompat="@drawable/icons8bitcoinaccepted96"
                                 android:scaleType="centerCrop"
                                 android:contentDescription="@string/content_description_media"
                         />
@@ -94,7 +94,7 @@
                         <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="140dp"
-                                app:srcCompat="@drawable/money"
+                                app:srcCompat="@drawable/loan"
                                 android:scaleType="centerCrop"
                                 android:contentDescription="@string/content_description_media"
                         />
@@ -148,7 +148,7 @@
                         <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="140dp"
-                                app:srcCompat="@drawable/icons8fundaccounting96"
+                                app:srcCompat="@drawable/icons8ledger96"
                                 android:scaleType="centerCrop"
                                 android:contentDescription="@string/content_description_media"
                         />
@@ -200,7 +200,7 @@
                         <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="140dp"
-                                app:srcCompat="@drawable/tele"
+                                app:srcCompat="@drawable/rainy_day"
                                 android:scaleType="centerCrop"
                                 android:contentDescription="@string/content_description_media"
                         />
