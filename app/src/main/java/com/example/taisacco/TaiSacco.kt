@@ -55,7 +55,9 @@ class TaiSacco : Fragment() {
                 else-> "About"
             }
         }.attach()
-
+        tabLayout.getTabAt(0)?.setIcon(R.drawable.grow_portfolio256)
+        tabLayout.getTabAt(1)?.setIcon(R.drawable.money_bag)
+        tabLayout.getTabAt(2)?.setIcon(R.drawable.data_analysis_brain_arrow_graph_think256)
     }
 
 }
