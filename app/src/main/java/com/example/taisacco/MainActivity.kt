@@ -23,8 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         toolbar = binding.toolbar
         setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayShowHomeEnabled(true)
+
 
         drawerLayout = binding.drawer
         val navController = this.findNavController(R.id.myNavHostFragment)

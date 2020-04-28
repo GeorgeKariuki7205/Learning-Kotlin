@@ -9,7 +9,7 @@
     <Button
             android:text="Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="1"
+            android:layout_height="wrap_content" android:id="@+id/hide" android:layout_weight="1"
             android:background="#00FF0000" android:textColor="#00F3F1F1"/>
 
 </LinearLayout>

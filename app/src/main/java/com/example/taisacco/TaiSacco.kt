@@ -38,10 +38,7 @@ class TaiSacco : Fragment() {
 
 //        CHANGING TOOLBAR NAME.
 
-        (activity as MainActivity).supportActionBar?.title = "TAI SACCO"
-
-//        THIS SECTION OF THE CODE IS USED TO HANDLE THE CLICK FUNCTIONALITY OF THE CARDS.
-
+        (activity as MainActivity).supportActionBar?.title = "Tai Sacco"
         return binding.root
     }
 

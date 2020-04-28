@@ -202,7 +202,7 @@
                         <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="140dp"
-                                app:srcCompat="@drawable/team_human_mind_thinking_brain_teamwork256"
+                                app:srcCompat="@drawable/coin"
                                 android:scaleType="centerCrop"
                                 android:contentDescription="@string/content_description_media"
                         />
@@ -217,7 +217,7 @@
                             <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Mini  Statement"
+                                    android:text="AirTime  Balance"
                                     android:textStyle="bold"
                                     android:textSize="18sp" android:textColor="#000000"/>
 
@@ -237,35 +237,21 @@
                 </com.google.android.material.card.MaterialCardView>
             </GridLayout>
         </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"  app:layout_constraintBottom_toBottomOf="parent">
 
-            <com.google.android.material.button.MaterialButton android:layout_width="wrap_content"
-                                                               android:layout_height="wrap_content" android:text="My Account" android:id="@+id/button5"
-                                                               android:background="@color/colorAccent" />
-            <!--<Button-->
-                    <!--android:text="My Account"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content" android:id="@+id/button5" -->
-                    <!--android:background="#9EE058"/>-->
-            <Button
-                    android:text="Statements"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button4" android:layout_weight="1"
-                    android:background="#FFEB3B"/>
-            <Button
-                    android:text="Contact Us"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button3" android:layout_weight="1"
-                    android:background="#3B993D"/>
-        </LinearLayout>
-        <!--<include layout="@layout/horizontal_view"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:layout_constraintBottom_toBottomOf="@id/linearLayout"-->
-        <!--android:visibility="visible" app:layout_constraintBottom_toTopOf="@id/linearLayout"/>-->
+        <!--<android.support.design.widget.FloatingActionButton-->
+
+                <!--android:id="@+id/fab"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="end|bottom"-->
+                <!--android:src="@drawable/ic_profile"-->
+                <!--android:contentDescription="submit"-->
+                <!--android:layout_margin="16dp" android:layout_marginEnd="8dp"-->
+                <!--app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"-->
+                <!--android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"-->
+                <!--android:layout_marginLeft="8dp" app:layout_constraintHorizontal_bias="1.0"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"/>-->
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
