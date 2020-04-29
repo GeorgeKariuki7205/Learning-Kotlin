@@ -7,9 +7,17 @@
     <fragment android:id="@+id/taiSacco" android:name="com.example.taisacco.TaiSacco" android:label="fragment_tai_sacco"
               tools:layout="@layout/fragment_tai_sacco">
         <action android:id="@+id/action_taiSacco_to_balanceEnquiry" app:destination="@id/balanceEnquiry"/>
+        <action
+                android:id="@+id/action_taiSacco_to_miniStatement"
+                app:destination="@id/miniStatement" />
     </fragment>
     <fragment android:id="@+id/enquiry" android:name="com.example.taisacco.Enquiry" android:label="fragment_enquiry"
               tools:layout="@layout/fragment_enquiry"/>
     <fragment android:id="@+id/balanceEnquiry" android:name="com.example.taisacco.BalanceEnquiry"
               android:label="BalanceEnquiry"/>
+    <fragment
+            android:id="@+id/miniStatement"
+            android:name="com.example.taisacco.miniStatement"
+            android:label="fragment_mini_statement"
+            tools:layout="@layout/fragment_mini_statement" />
 </navigation>

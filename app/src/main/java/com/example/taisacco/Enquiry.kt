@@ -34,7 +34,8 @@ class Enquiry : Fragment() {
                 }
 
                 binding.cards.setOnClickListener {
-                    Toast.makeText(context, "Mini Statement Clicked", Toast.LENGTH_SHORT).show()
+//                    Toast.makeText(context, "Mini Statement Clicked", Toast.LENGTH_SHORT).show()
+                      it.findNavController().navigate(R.id.action_taiSacco_to_miniStatement)
                 }
 
                 binding.card12.setOnClickListener {
