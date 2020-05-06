@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "685890153017",
+    "firebase_url": "https://george-e0d0f.firebaseio.com",
+    "project_id": "george-e0d0f",
+    "storage_bucket": "george-e0d0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685890153017:android:be111c1ef2a704fc1dfbe8",
+        "android_client_info": {
+          "package_name": "com.example.taisacco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685890153017-tukka54ta9mjnll13h0pcnrhlfj6fphu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.taisacco",
+            "certificate_hash": "77d2632fe7e8947a958a141aa2fd228f1084f2c5"
+          }
+        },
+        {
+          "client_id": "685890153017-u7t8k1pi3gipojo109aqq4k08hvrvbvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZZbvwf8wd9pqM6SzQzAmUhLPtagzC49g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685890153017-u7t8k1pi3gipojo109aqq4k08hvrvbvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
