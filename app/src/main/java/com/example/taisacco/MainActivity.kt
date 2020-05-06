@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         val navController = this.findNavController(R.id.myNavHostFragment)
         NavigationUI.setupActionBarWithNavController(this,navController,drawerLayout)
         NavigationUI.setupWithNavController(binding.navView, navController)
-
 //        setHasOptionsMenu(true)
     }
     override fun onSupportNavigateUp(): Boolean {
@@ -38,11 +37,12 @@ class MainActivity : AppCompatActivity() {
         return NavigationUI.navigateUp(navController, drawerLayout)
     }
 
-
 //    THIS SECTION OF THE CODE IS USED TO IMPLEMENT THE MENU ON THE TOOL BAR.
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
+        val inflater2: MenuInflater = menuInflater
         inflater.inflate(R.menu.toolbar_navgation_menu, menu)
+        inflater2.inflate(R.menu.navigationmenu,menu)
         return true
     }
 
@@ -55,6 +55,10 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.open -> {
                 Toast.makeText(this, "Open Clicked", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.nav_logout->{
+                Toast.makeText(this, "LogOut Clicked", Toast.LENGTH_SHORT).show()
                 true
             }
             else -> super.onOptionsItemSelected(item)

@@ -25,6 +25,7 @@ class miniStatement : Fragment() {
             container,
             false
         )
+        (activity as MainActivity).supportActionBar?.title = "Statements."
         return  binding.root
     }
 

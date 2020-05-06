@@ -2,17 +2,21 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
-            app:startDestination="@id/taiSacco">
+            app:startDestination="@id/logIn">
 
     <fragment android:id="@+id/taiSacco" android:name="com.example.taisacco.TaiSacco" android:label="fragment_tai_sacco"
               tools:layout="@layout/fragment_tai_sacco">
-        <action android:id="@+id/action_taiSacco_to_balanceEnquiry" app:destination="@id/balanceEnquiry"/>
+        <action
+                android:id="@+id/action_taiSacco_to_balanceEnquiry"
+                app:destination="@id/balanceEnquiry"
+                app:enterAnim="@android:anim/slide_in_left" />
         <action
                 android:id="@+id/action_taiSacco_to_miniStatement"
-                app:destination="@id/miniStatement" />
+                app:destination="@id/miniStatement"
+                app:enterAnim="@android:anim/slide_in_left"
+                app:exitAnim="@android:anim/slide_out_right"
+                app:launchSingleTop="false" />
     </fragment>
-    <fragment android:id="@+id/enquiry" android:name="com.example.taisacco.Enquiry" android:label="fragment_enquiry"
-              tools:layout="@layout/fragment_enquiry"/>
     <fragment android:id="@+id/balanceEnquiry" android:name="com.example.taisacco.BalanceEnquiry"
               android:label="BalanceEnquiry"/>
     <fragment
@@ -20,4 +24,23 @@
             android:name="com.example.taisacco.miniStatement"
             android:label="fragment_mini_statement"
             tools:layout="@layout/fragment_mini_statement" />
+    <fragment
+            android:id="@+id/logIn"
+            android:name="com.example.taisacco.LogIn"
+            android:label="fragment_log_in"
+            tools:layout="@layout/fragment_log_in" >
+        <action
+                android:id="@+id/action_logIn_to_taiSacco"
+                app:destination="@id/taiSacco" />
+    </fragment>
+    <fragment
+            android:id="@+id/myAccount"
+            android:name="com.example.taisacco.MyAccount"
+            android:label="fragment_my_account"
+            tools:layout="@layout/fragment_my_account" />
+    <fragment
+            android:id="@+id/updateProfile"
+            android:name="com.example.taisacco.UpdateProfile"
+            android:label="fragment_update_profile"
+            tools:layout="@layout/fragment_update_profile" />
 </navigation>
