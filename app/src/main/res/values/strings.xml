@@ -11,4 +11,5 @@
     <string name="secondary_text">Secondary Text</string>
     <string name="supporting_text">Supporting Text</string>
     <string name="action_1">Action</string>
+    <string name="label">label</string>
 </resources>

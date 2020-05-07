@@ -42,5 +42,21 @@
             android:id="@+id/updateProfile"
             android:name="com.example.taisacco.UpdateProfile"
             android:label="fragment_update_profile"
-            tools:layout="@layout/fragment_update_profile" />
+            tools:layout="@layout/fragment_update_profile" >
+        <action
+                android:id="@+id/action_updateProfile_to_reciever"
+                app:destination="@id/reciever" />
+        <argument
+                android:name="name"
+                app:argType="string" />
+    </fragment>
+    <fragment
+            android:id="@+id/reciever"
+            android:name="com.example.taisacco.Reciever"
+            android:label="fragment_reciever"
+            tools:layout="@layout/fragment_reciever" >
+        <argument
+                android:name="name"
+                app:argType="string" />
+    </fragment>
 </navigation>
