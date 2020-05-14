@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
-            app:startDestination="@id/logIn">
+            app:startDestination="@id/taiSacco">
 
     <fragment android:id="@+id/taiSacco" android:name="com.example.taisacco.TaiSacco" android:label="fragment_tai_sacco"
               tools:layout="@layout/fragment_tai_sacco">
@@ -59,4 +59,14 @@
                 android:name="name"
                 app:argType="string" />
     </fragment>
+    <fragment
+            android:id="@+id/lifeCycle"
+            android:name="com.example.taisacco.LifeCycle"
+            android:label="fragment_life_cycle"
+            tools:layout="@layout/fragment_life_cycle" />
+    <fragment
+            android:id="@+id/bottom_Navigation"
+            android:name="com.example.taisacco.Bottom_Navigation"
+            android:label="fragment_bottom__navigation"
+            tools:layout="@layout/fragment_bottom__navigation" />
 </navigation>

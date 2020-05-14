@@ -2,6 +2,7 @@ package com.example.taisacco
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -12,6 +13,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -27,8 +29,11 @@ class MainActivity : AppCompatActivity() {
 
         drawerLayout = binding.drawer
         val navController = this.findNavController(R.id.myNavHostFragment)
+
         NavigationUI.setupActionBarWithNavController(this,navController,drawerLayout)
+
         NavigationUI.setupWithNavController(binding.navView, navController)
+
 //        setHasOptionsMenu(true)
     }
     override fun onSupportNavigateUp(): Boolean {
@@ -65,5 +70,35 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//    THIS SECTION OF THE CODE IS USED TO IMPLEMENT THE VIEW PAGER 2.
+
+//    THIS SECTION OF THE CODE IS USED TO GET THE ONSTART FUNCTIONALITY OF THE APPLICATION.
+
+    override fun onStart() {
+        super.onStart()
+//        Log.i("OnStart", "This is the OnStart Functionality.")
+        Timber.i("This is the OnStart Functionality.")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Timber.i("This is the OnResume Functionality.")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.i("This is the OnDestroy Functionality.")
+    }
+    override fun onPause() {
+        super.onPause()
+        Timber.i("onPause Called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Timber.i("onStop Called")
+    }
+    override fun onRestart() {
+        super.onRestart()
+        Timber.i("onRestart Called")
+    }
 }

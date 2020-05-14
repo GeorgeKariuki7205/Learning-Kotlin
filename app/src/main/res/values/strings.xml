@@ -12,4 +12,6 @@
     <string name="supporting_text">Supporting Text</string>
     <string name="action_1">Action</string>
     <string name="label">label</string>
+    <string name="text_label_1">DashBoard</string>
+    <string name="text_label_2">Share</string>
 </resources>
