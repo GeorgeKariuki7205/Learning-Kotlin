@@ -65,8 +65,8 @@
             android:label="fragment_life_cycle"
             tools:layout="@layout/fragment_life_cycle" />
     <fragment
-            android:id="@+id/bottom_Navigation"
-            android:name="com.example.taisacco.Bottom_Navigation"
-            android:label="fragment_bottom__navigation"
-            tools:layout="@layout/fragment_bottom__navigation" />
+            android:id="@+id/bottomNavigation2"
+            android:name="com.example.taisacco.BottomNavigation"
+            android:label="fragment_bottom_navigation"
+            tools:layout="@layout/fragment_bottom_navigation" />
 </navigation>

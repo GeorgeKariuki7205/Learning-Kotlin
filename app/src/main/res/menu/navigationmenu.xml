@@ -10,7 +10,7 @@
                 android:icon="@drawable/ic_book_black_24dp"
                 android:title="Balance Enquiry"/>
         <item
-                android:id="@+id/bottom_Navigation"
+                android:id="@+id/bottomNavigation2"
                 android:icon="@drawable/ic_attach_money_black_24dp"
                 android:title="Withdraw Cash"/>
     </group>

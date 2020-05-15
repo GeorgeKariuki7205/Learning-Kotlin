@@ -2,22 +2,21 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".Bottom_Navigation">
+        tools:context=".BottomNavigation">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@color/white"
                 app:elevation="15dp"
-                app:itemIconTint="@color/white"
+                app:itemIconTint="@color/colorAccent"
                 app:itemRippleColor="@color/black"
-                app:itemTextColor="@color/white"
+                app:itemTextColor="@color/colorPrimaryDark"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:menu="@menu/bottom_navigation_menu" />
 
